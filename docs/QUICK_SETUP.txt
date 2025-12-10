@@ -1,0 +1,81 @@
+╔════════════════════════════════════════════════════════════════╗
+║           JobXchange - QUICK SETUP GUIDE                       ║
+╚════════════════════════════════════════════════════════════════╝
+
+STEP 1: START XAMPP
+-------------------
+1. Open XAMPP Control Panel
+2. Click "Start" for Apache
+3. Click "Start" for MySQL
+
+
+STEP 2: IMPORT DATABASE
+-----------------------
+1. Open browser: http://localhost/phpmyadmin
+2. Click "Import" tab
+3. Choose file: C:\xampp\htdocs\JobXchange\database_schema.sql
+4. Click "Go"
+
+
+STEP 3: ACCESS APPLICATION
+--------------------------
+Open browser and go to:
+http://localhost/JobXchange/public/login.php
+
+
+DEFAULT ADMIN LOGIN
+-------------------
+Email: admin@jobxchange.com
+Password: admin123
+
+
+TESTING THE APPLICATION
+-----------------------
+1. Login as admin (use credentials above)
+2. Create a recruiter account (signup.php, select "Recruiter")
+3. Login as recruiter, post a job
+4. Login as admin again, approve the job
+5. Create a candidate account (signup.php, select "Candidate")
+6. Login as candidate, view and apply for jobs
+
+
+FILE LOCATIONS
+--------------
+Project Root: C:\xampp\htdocs\JobXchange
+Login Page:   http://localhost/JobXchange/public/login.php
+Signup Page:  http://localhost/JobXchange/public/signup.php
+phpMyAdmin:   http://localhost/phpmyadmin
+
+
+TROUBLESHOOTING
+---------------
+Problem: Apache won't start
+Solution: Stop IIS or change port in XAMPP config
+
+Problem: MySQL won't start
+Solution: Stop other MySQL services
+
+Problem: Database error
+Solution: Make sure MySQL is running and database "jobxchange" exists
+
+Problem: Page not found
+Solution: Check URL has correct path (includes "public" folder)
+
+
+FEATURES OVERVIEW
+-----------------
+✓ Three user roles: Admin, Recruiter, Candidate
+✓ Signup with role selection
+✓ Secure login system
+✓ Recruiter can post jobs (pending approval)
+✓ Admin can approve/reject jobs
+✓ Candidate can view approved jobs
+✓ Candidate can apply for jobs
+✓ Recruiter can view applicants
+✓ Admin can delete users and jobs
+✓ Responsive modern UI
+✓ Session-based authentication
+
+
+ENJOY USING JobXchange! 🎉
+
